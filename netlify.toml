@@ -1,0 +1,9 @@
+[build]
+  # The website lives in the rettro-main folder; no build step needed
+  publish = "rettro-main"
+  command = ""
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
