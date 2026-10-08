@@ -1,0 +1,588 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About Me | Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  
+  <!-- FontAwesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* Hero Section */
+    .hero-about {
+      position: relative;
+      min-height: 90vh;
+      background: url("assets/img/gallery/about.jpeg") center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+     
+    }
+    .hero-about-text {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-about-text .tagline {
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 15px;
+      opacity: 0.9;
+    }
+    .hero-about-text h1 { 
+      color: #ffffff; 
+      font-weight: 700; 
+      margin-bottom: 20px;
+    }
+    .hero-about-text p { 
+      color: #f0f0f0; 
+      margin-bottom: 30px;
+    }
+
+    .simple-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Short padding for compact size */
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 0; /* Sharp, simple edges */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevents text wrap/stretch */
+  margin-top: 10px; /* Space from text above */
+}
+
+.simple-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .simple-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+    /* What We Do Section */
+    .what-we-do {
+      padding: 100px 0;
+      background: #f8f9fa;
+    }
+    .container1 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .what-we-do .content {
+      padding-right: 40px;
+    }
+    .what-we-do .content h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+    .what-we-do .image img {
+      width: 100%;
+      
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    /* Hero Content Section */
+    .hero-heading {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+    .hero-description {
+      color: #555;
+      line-height: 1.7;
+    }
+    .hero-image-container {
+      height: 400px;
+      margin-top: 0;
+    }
+    .hero-image-bg {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      z-index: 1;
+      border-radius: 24px;
+    }
+    .hero-main-image {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    /* Stats Cards */
+    .stats-card {
+      background: #000000;
+      color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      height: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .stats-card:hover {
+      transform: translateY(-10px);
+    }
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Gallery */
+    .gallery-item {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
+      margin-bottom: 20px;
+    }
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    }
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover .gallery-image {
+      transform: scale(1.1);
+    }
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+      color: white;
+      padding: 30px 25px 25px;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover .gallery-overlay {
+      transform: translateY(0);
+    }
+    .gallery-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #cba200;
+      margin-bottom: 5px;
+    }
+    .gallery-text {
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    /* Mission Vision Cards */
+    .mission-vision-card {
+      background: white;
+      border: none;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    .mission-vision-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+    .mission-badge {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      display: inline-block;
+    }
+    .mission-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    /* Process Section */
+    .process-area {
+      padding: 100px 0;
+      background: #f8f9fa;
+    }
+    .single-process {
+      padding: 40px 30px;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+    .single-process:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    .process-number {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .single-process h5 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+    }
+
+    /* PERFECT RESPONSIVE FIXES - NO OVERLAPS */
+    @media (max-width: 991px) {
+      .what-we-do { 
+        padding: 80px 0; 
+      }
+      .what-we-do .content { 
+        padding-right: 0; 
+        margin-bottom: 40px; 
+      }
+      .what-we-do .content h1 { 
+        font-size: 2rem; 
+      }
+      .hero-image-container { 
+        height: 300px; 
+        margin-top: 30px; 
+      }
+      .gallery-item { 
+        height: 250px; 
+      }
+    }
+    @media (max-width: 767px) {
+      .hero-heading { 
+        font-size: 2.2rem; 
+      }
+      .gallery-item { 
+        height: 220px; 
+      }
+      .what-we-do .image img { 
+        height: 300px; 
+      }
+      .hero-about-text h1 { 
+        font-size: 2rem; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img src="assets/img/logo/loder.png" alt="Loading..." loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-area">
+      <div class="main-header header-sticky">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-1">
+              <div class="logo">
+                <a href="index.html"><img src="assets/img/logo/magic-light-media-logo1.png" alt="Magic Light Media"></a>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-10">
+              <div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+                <nav class="hamburger-menu">
+                  <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-about">
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="hero-about-text">
+          <span class="tagline">About the photographer</span>
+          <h1>I tell stories through light and shadows.</h1>
+          <p>Turning ideas into clear visuals through science, simplicity, and thoughtful design.</p>
+         <a href="contact.html#contact" class="simple-btn">Book Now</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+      <div class="container1">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="content">
+              <h1>What We Do</h1>
+              <p>We offer end-to-end creative production under one roof.</p>
+              <div class="mt-4">
+                <p><strong>Pre-Production:</strong> Concept development, scripting, storyboarding, casting, and planning.</p>
+                <p><strong>Production:</strong> Ad films, digital commercials, brand documentaries, product films, and short-form content.</p>
+                <p><strong>Post-Production:</strong> Editing, color grading, sound design, motion graphics, and platform-ready delivery.</p>
+              </div>
+              <p class="mt-3 mb-0"><strong>From the first idea to the final frame â€” we take responsibility for the entire journey.</strong></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image">
+              <img src="./assets/img/gallery/commercials.jpg" alt="Creative production process" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container px-4 px-md-0 py-5">
+      <!-- Hero Content + Image -->
+      <section class="py-5 mb-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <h1 class="hero-heading mb-4">Crafting visual legacies since 2013.</h1>
+            <div class="hero-description">
+              <p>Magic Light Media began as a small boutique studio with a passion for unconventional angles and raw emotion.</p>
+              <p class="mt-3 mb-0">Today, we are an award-winning creative agency servicing global brands and high-end clientele. Our approach is deeply personalâ€”building trust to capture authentic, lived-in imagery.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="position-relative hero-image-container">
+              <div class="hero-image-bg"></div>
+              <img src="assets/img/gallery/visual.jpeg" alt="Professional photographer" class="img-fluid hero-main-image" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats + Gallery -->
+      <section class="py-5">
+        <!-- Stats -->
+        <div class="row g-4 g-lg-5 justify-content-center mb-5">
+          <div class="col-md-6 col-lg-5">
+            <div class="stats-card">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="stats-card">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Industry Awards</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <img src="assets/img/gallery/photo-1.png" class="gallery-image" loading="lazy" decoding="async">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Our Story</h4>
+                <p class="gallery-text mb-0">Moments captured with raw emotion.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <img src="assets/img/gallery/photo-3.png" alt="Studio lighting" class="gallery-image" loading="lazy" decoding="async">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">The Setup</h4>
+                <p class="gallery-text mb-0">Industry-leading lighting equipment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <img src="assets/img/gallery/photo-2.png" alt="Editing workspace" class="gallery-image" loading="lazy" decoding="async">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">The Darkroom</h4>
+                <p class="gallery-text mb-0">Color grading and retouching magic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="py-5">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <div class="card mission-vision-card">
+              <span class="mission-badge">Our Mission</span>
+              <h3 class="mission-title">To elevate the ordinary into the extraordinary.</h3>
+              <p class="hero-description mb-0">We document life's milestones with cinematic aesthetic that evokes emotion and stands the test of time.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mission-vision-card">
+              <span class="mission-badge">Our Vision</span>
+              <h3 class="mission-title">Redefining visual storytelling standards.</h3>
+              <p class="hero-description mb-0">To be the global vanguard of premium photography where every frame is art and every client a lifelong collaborator.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Process Section -->
+    <section class="process-area">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="mb-4" style="font-size: 2.5rem; font-weight: 700; color: #1a1a1a;">The way each story is crafted</h2>
+            <p class="lead" style="color: #555; font-size: 1.1rem;">A simple, relaxed process that keeps you comfortable and fully present in front of the camera.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="single-process">
+              <span class="process-number">01</span>
+              <h5>Connect & plan</h5>
+              <p>Understanding your story, style and expectations to design the perfect session.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-process">
+              <span class="process-number">02</span>
+              <h5>Shoot with ease</h5>
+              <p>Guided, candid-first sessions that keep posing natural and stress-free.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-process">
+              <span class="process-number">03</span>
+              <h5>Deliver & relive</h5>
+              <p>Hand-edited galleries delivered in high-resolution, ready to print and share.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="background: #1a1a1a; color: white; padding: 60px 0 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="assets/img/logo/magic-light-media-logofooter.png" alt="Magic Light Media" class="footer-logo mb-3" style="max-width: 200px;">
+          <p><strong>Address:</strong> 297/1, Michael nagar, 2nd Sarani, Kolkata - 700133</p>
+          <p><strong>Phone:</strong> +91 6295467991 / +91 9830841283</p>
+          <p><strong>Email:</strong> <a href="mailto:magiclightmediaofficial@gmail.com" style="color: #ffd700;">magiclightmediaofficial@gmail.com</a></p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 style="color: white; margin-bottom: 20px;">Useful Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+            <li><a href="about.html" style="color: #ccc; text-decoration: none;">About us</a></li>
+            <li><a href="pricing.html" style="color: #ccc; text-decoration: none;">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 style="color: white; margin-bottom: 20px;">Follow Us</h4>
+          <div class="social-links" style="font-size: 1.5rem;">
+            <a href="https://www.linkedin.com/in/magic-light-media-4b161a3a1/" style="color: #ccc; margin-right: 15px;" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/magic_lightmedia/" style="color: #ccc; margin-right: 15px;" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: #ccc;" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4 pt-4 border-top" style="border-color: #333; color: #999;">
+        <p>Â© Copyright 2026, All Rights Reserved by Magic Light Media</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/jquery.slicknav.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/jquery.magnific-popup.js"></script>
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <script src="./assets/js/jquery.sticky.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

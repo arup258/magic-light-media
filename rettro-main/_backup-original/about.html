@@ -1,0 +1,526 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Magic Light Media | Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon (1).ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+
+  <style>
+
+.hero-about {
+  position: relative;
+  min-height: 90vh;
+  background: url("assets/img/gallery/about-1.jpeg") center/cover no-repeat;
+  color: #fff;
+}
+.hero-about .hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, transparent 100%); */
+}
+.hero-about-text {
+  position: relative;
+  z-index: 1;
+}
+.hero-about-text .tagline {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.hero-about-text h4 {
+  color: #ffffff;
+}
+
+.hero-about-text p {
+  color: #ffffff;
+}
+.hero-about-photo img {
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 20px;
+}
+.about-stats .single-stat {
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: #0b0b0b;
+  color: #fff;
+}
+.about-stats h3 {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+/* Gallery grid: controls gap between items */
+.about-gallery-grid {
+  row-gap: 18px;       /* vertical gap */
+  column-gap: 18px;    /* horizontal gap */
+}
+
+/* Card wrapper */
+.about-gallery-grid .gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Images */
+.about-gallery-grid .gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Hover zoom effect */
+.about-gallery-grid .gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.hero-about-text .border-btn,
+.hero-about-text .border-btn2 {
+  display: inline-block;
+  background: #c8a200;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(200, 162, 0, 0.25);
+}
+
+
+
+.process-area .single-process {
+  padding: 25px 20px;
+  border-radius: 12px;
+  background: #f7f7f7;
+}
+.process-number {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/preloder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Header (reuse your existing header markup) -->
+  <header class="header-area">
+  <div class="main-header">
+    <div class="container">
+      <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/logo/magic light media logo-01.png" alt="Magic Light Media">
+          </a>
+        </div>
+        
+
+        <!-- Menu -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+
+  <!-- Fullscreen hero with photographer image -->
+  <section class="hero-about d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-about-text">
+            <span class="tagline">About us</span>
+            <h4>As society progresses we do . We use scientific knowledge to propagate the concept you actually need. We believe in simplicity not the cluttered work. As light helps us to visualize, we try to help visualize the product before the public.</h4>
+            <!-- <p>Turning ideas into clear visuals through science, simplicity, and thoughtful design.</p> -->
+            <a href="contact.html#contact" class="border-btn border-btn2 mt-4">Book a Session</a>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio + stats -->
+  <!-- <section class="about-bio section-padding40">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="section-tittle mb-30">
+            <h2>Meet the eye behind the lens</h2>
+          </div>
+          <p class="mb-3">
+            For the past 7+ years, I have been documenting real moments for couples, brands and families across cities and continents.
+          </p>
+          <p class="mb-3">
+            My work combines natural light, cinematic framing and minimal postâ€‘processing to keep every frame authentic and timeless.
+          </p>
+          <p class="mb-0">
+            Whether it is an intimate elopement or a bustling city portrait session, the goal is always the same: to create images that feel like you.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="about-stats">
+            <div class="single-stat">
+              <h3>250+</h3>
+              <span>Completed photo sessions</span>
+            </div>
+            <div class="single-stat">
+              <h3>15</h3>
+              <span>Cities photographed in</span>
+            </div>
+            <div class="single-stat">
+              <h3>100%</h3>
+              <span>Client satisfaction focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+      <section class="what-we-do">
+  <div class="container1">
+    <div class="content">
+      <h1>What We Do</h1>
+      <p>
+        We offer end-to-end creative production under one roof.<br><br>
+        <strong>Pre-Production:</strong> Concept development, scripting, storyboarding, casting, and planning.<br>
+        <strong>Production:</strong> Ad films, digital commercials, brand documentaries, product films, and short-form content.<br>
+        <strong>Post-Production:</strong> Editing, color grading, sound design, motion graphics, and platform-ready delivery.<br><br>
+        From the first idea to the final frame â€” we take responsibility for the entire journey.
+      </p>
+    </div>
+    <div class="image">
+      <img src="./assets/img/gallery/what we do.jpeg" alt="Creative production process">
+    </div>
+  </div>
+</section>
+
+ 
+<!-- Fixed Complete Section - Proper Spacing & No Overlaps -->
+<div class="container px-4 px-md-0 py-5">
+    <!-- Hero Section -->
+    
+    <!-- Stats + Gallery Section -->
+    <section class="py-5 py-lg-0 bg-white">
+        
+
+        <!-- Stats Grid - Fixed Spacing -->
+        <!-- <div class="row g-4 g-lg-5 justify-content-center mb-5 pb-5">
+            <div class="col-md-6 col-lg-5">
+                <div class="stats-card h-100">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="stats-card h-100">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Industry Awards</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Gallery Grid - Fixed Heights & No Overlap -->
+        <div class="row g-4 g-lg-5">
+            <!-- Gallery Item 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/our story.jpeg" 
+                         alt="Professional photographer in action" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Our Story</h4>
+                        <p class="gallery-text mb-0">Magic Light Media was born from a simple belief—that powerful visuals don’t need complexity, they need clarity .
+Rooted in storytelling and guided by scientific understanding of light, perception, and emotion, we help brands communicate with purpose and precision .
+</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/photo-3.png" 
+                         alt="Professional studio lighting setup" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">The Setup</h4>
+                        <p class="gallery-text mb-0">
+                Our setup is designed for flexibility, creativity, and high-end production .
+                From full-frame camera systems to controlled lighting environments, we build every frame with intention—ensuring quality, consistency, and visual impact .</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/the darkroom.jpeg" 
+                         alt="Professional photo editing workspace" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Post Production set up</h4>
+                        <p class="gallery-text mb-0">Our work truly comes alive in post-production, where visuals are refined with precision and artistic balance .
+From color grading to detailed retouching, we focus on clean, cinematic outputs that enhance the story without unnecessary clutter .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <!-- Mission & Vision Section -->
+        <section class="py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="card mission-vision-card h-100">
+                        <span class="mission-badge mb-3 d-block">Our Mission</span>
+                        <h3 class="mission-title mb-4">To create meaningful visual narratives through simplicity, clarity, and scientific storytelling .</h3>
+                        <p class="hero-description">
+                            We aim to help brands communicate what truly matters—turning ideas into impactful visual experiences . 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mission-vision-card h-100">
+                        <span class="mission-badge mb-3 d-block">Our Vision</span>
+                        <h3 class="mission-title mb-4">To become a leading creative force in advertising and visual media across India .</h3>
+                        <p class="hero-description">
+                            We envision a future where every brand communicates with purpose, clarity, and powerful visual identity .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+  <!-- Approach / workflow -->
+  <section class="process-area section-padding40">
+    <div class="container">
+      <div class="row justify-content-center mb-40">
+        <div class="col-lg-8 text-center">
+          <div class="section-tittle mb-20">
+            <h2>Our Process</h2>
+          </div>
+          <!-- <p>
+            A simple, relaxed process that keeps you comfortable and fully present in front of the camera.
+          </p> -->
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-30">
+          <div class="single-process text-center">
+            <span class="process-number">01</span>
+            <h5>Connect & Plan</h5>
+            <p>We start by understanding your vision, goals, and story.
+A clear plan ensures every detail is aligned before we create.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-30">
+          <div class="single-process text-center">
+            <span class="process-number">02</span>
+            <h5>Shoot with Ease</h5>
+            <p>Our process is smooth, focused, and creatively driven on set.
+We capture every moment with precision, comfort, and intention.
+</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-30">
+          <div class="single-process text-center">
+            <span class="process-number">03</span>
+            <h5>Deliver & Relive</h5>
+            <p>We refine and deliver visuals that bring your story to life.
+Every frame is crafted to be experienced, remembered, and relived.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-col company-info">
+        <img src="assets/img/logo/magic-light-media-logofooter.png" alt="" class="footer-logo">
+        <p><strong>Address:</strong> 297/1, Michael nagar, 2nd Sarani, Kolkata - 700133</p>
+        <p><strong>Phone:</strong> +91 6295467991 / +91 9830841283</p>
+        <p><strong>Email:</strong> magiclightmediaofficial@gmail.com </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="pricing.html">Services</a></li>
+          <!-- <li><a href="banking & finance.html">Work</a></li> -->
+
+        </ul>
+      </div>
+
+    
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="social-links">
+          <a href=" https://www.linkedin.com/in/magic-light-media-4b161a3a1/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/magic_lightmedia/"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- âœ… Copyright Section -->
+    <div class="footer-bottom">
+      <p>Â© Copyright 2024, All Rights Reserved by Magic Light Media</p>
+    </div>
+  </footer>
+
+
+
+
+</main>
+
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+<!-- Date Picker -->
+<script src="./assets/js/gijgo.min.js"></script>
+<!-- Nice-select, sticky -->
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<!-- Progress -->
+<script src="./assets/js/jquery.barfiller.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+
+
+
+
+
+<!-- navbar  -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿Mismatches in HTML:
+
+Mismatches in CSS:
+File: gijgo.css => NOT FOUND: '../img/logo/date-picker-icon.png'
+File: owl.carousel.min.css => NOT FOUND: 'owl.video.play.png'
+File: style.css => NOT FOUND: '../img/slider/slider-img-1.jpg'
+File: style.css => NOT FOUND: '../img/background-img/bg-img-2.jpg'
+File: style.css => NOT FOUND: '../img/background-img/bg-img-3.jpg'
+File: style.css => NOT FOUND: '../img/hero/works\ .jpg'
+File: style.css => NOT FOUND: '../img/hero/works\ .jpg'
+File: style.css => NOT FOUND: '../img/gallery/section_bg03.jpg'
+File: style.css => NOT FOUND: '../img/banner/bradcam.png'
+File: style.css => NOT FOUND: '../img/banner/bradcam2.png'
+File: style.css => NOT FOUND: '../img/banner/bradcam3.png'
+
